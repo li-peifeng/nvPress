@@ -1,4 +1,4 @@
-# 本仓库只为了不能访问Docker HUB的用户提供下载包。
+## 本仓库为不能访问Docker HUB的用户提供安装包。
 
 # nvPress概述
 
