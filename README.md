@@ -1,5 +1,11 @@
 ## 本仓库为不能访问Docker HUB的用户提供安装包。
 
+### Next 先行版
+docker pull ghcr.io/li-peifeng/nvpress:next
+
+### nvPress正式版
+docker pull ghcr.io/li-peifeng/nvpress:latest
+
 # nvPress概述
 
 nvPress是一个基于nodejs实现的内容管理系统。
