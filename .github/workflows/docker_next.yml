@@ -34,8 +34,8 @@ jobs:
         uses: docker/metadata-action@v5
         with:
           images: |
-            leolitaly/nvpress:next
-            ghcr.io/${{ github.repository }}:next
+            leolitaly/nvpress
+            ghcr.io/${{ github.repository }}
 
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v3
@@ -63,5 +63,6 @@ jobs:
           context: .
           file: Dockerfile.next
           push: true
+          tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
           platforms: linux/amd64,linux/arm64
