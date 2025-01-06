@@ -1,4 +1,10 @@
-## 本仓库为不能访问Docker HUB的用户提供安装包。
+## 本仓库为不能访问 Docker HUB 的用户提供 ghcr.io Docker 镜像源。
+
+### Next 先行版
+docker pull ghcr.io/li-peifeng/nvpress:next
+
+### nvPress正式版
+docker pull ghcr.io/li-peifeng/nvpress:latest
 
 # nvPress概述
 
