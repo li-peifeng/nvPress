@@ -3,7 +3,7 @@ name: release_docker_next
 on:
   push:
     tags:
-      - '*'
+      - 'next'
 
 jobs:
   push_to_registries:
@@ -34,8 +34,8 @@ jobs:
         uses: docker/metadata-action@v5
         with:
           images: |
-            leolitaly/nvpress:next
-            ghcr.io/${{ github.repository }}:next
+            leolitaly/nvpress
+            ghcr.io/${{ github.repository }}
 
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v3
