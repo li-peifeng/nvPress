@@ -63,6 +63,6 @@ jobs:
           context: .
           file: Dockerfile.next
           push: true
-          tags: ${{ steps.meta.outputs.tags }}
+          tags: next
           labels: ${{ steps.meta.outputs.labels }}
           platforms: linux/amd64,linux/arm64
