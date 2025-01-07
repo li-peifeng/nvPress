@@ -6,7 +6,7 @@ docker pull leolitaly/isweet:latest
 docker pull ghcr.io/li-peifeng/isweet:latest
 
 ## 阿里云 Docker
-**Docker Hub 和 ghcr.io 访问有问题的可以用 此源拉取镜像**
+**Docker Hub 和 ghcr.io 访问有问题的可以用此源拉取镜像**
 
 docker pull crpi-lzr94m9idb4j2kpi.cn-shanghai.personal.cr.aliyuncs.com/isweet/nvpress:latest
 
