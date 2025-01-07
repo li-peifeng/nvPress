@@ -33,7 +33,10 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: ghcr.io/${{ github.repository }}
+          images: |
+            leolitaly/nvpress
+            ghcr.io/${{ github.repository }}
+            crpi-lzr94m9idb4j2kpi.cn-shanghai.personal.cr.aliyuncs.com/isweet/nvpress
 
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v3
@@ -47,6 +50,13 @@ jobs:
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Log in to aliyun
+        uses: docker/login-action@v3
+        with:
+          registry: crpi-lzr94m9idb4j2kpi.cn-shanghai.personal.cr.aliyuncs.com
+          username: ${{ secrets.ALI_USERNAME }}
+          password: ${{ secrets.ALI_TOKEN }}
 
       - name: Build and push Docker images
         id: push
