@@ -1,9 +1,9 @@
 ## 本仓库为不能访问 Docker HUB 的国内用户提供阿里云Docker镜像源。
 ## Docker
-docker pull leolitaly/isweet:latest
+docker pull leolitaly/nvpress:latest
 
 ## ghcr.io
-docker pull ghcr.io/li-peifeng/isweet:latest
+docker pull ghcr.io/li-peifeng/nvpress:latest
 
 ## 阿里云 Docker
 **Docker Hub 和 ghcr.io 访问有问题的可以用此源拉取镜像**
