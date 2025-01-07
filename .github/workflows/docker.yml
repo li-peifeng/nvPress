@@ -36,7 +36,7 @@ jobs:
           images: |
             leolitaly/nvpress
             ghcr.io/${{ github.repository }}
-            crpi-lzr94m9idb4j2kpi.cn-shanghai.personal.cr.aliyuncs.com/nvpress/nvpress
+            crpi-lzr94m9idb4j2kpi.cn-shanghai.personal.cr.aliyuncs.com/isweet/nvpress
 
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v3
