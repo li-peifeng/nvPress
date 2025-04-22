@@ -3,7 +3,7 @@ name: release_docker
 on:
   push:
     tags:
-      - '*'
+      - 'next'
 
 jobs:
   push_to_registries:
@@ -62,7 +62,7 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           context: .
-          file: Dockerfile
+          file: next/Dockerfile
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
