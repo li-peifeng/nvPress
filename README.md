@@ -1,3 +1,8 @@
+<p align="center">
+  <a href="https://peifeng.li"><img width="184px" alt="logo" src="https://li-peifeng.github.io/isweet/logo.png" />
+  </a>
+</p>
+
 ## 本仓库为不能访问 Docker HUB 的国内用户提供阿里云Docker镜像源。
 ## Docker
 docker pull leolitaly/nvpress:latest
