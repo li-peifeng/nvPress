@@ -3,7 +3,7 @@ name: release_docker
 on:
   push:
     tags:
-      - 'latest'
+      - '*'
 
 jobs:
   push_to_registries:
