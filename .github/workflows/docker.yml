@@ -34,7 +34,6 @@ jobs:
         uses: docker/metadata-action@v5
         with:
           images: |
-            leolitaly/nvpress
             ghcr.io/${{ github.repository }}
             crpi-lzr94m9idb4j2kpi.cn-shanghai.personal.cr.aliyuncs.com/isweet/nvpress
           tags: next
@@ -44,12 +43,6 @@ jobs:
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
-
-      - name: Log in to Docker Hub
-        uses: docker/login-action@v3
-        with:
-          username: ${{ secrets.DOCKER_USERNAME }}
-          password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: Log in to the Container registry
         uses: docker/login-action@v3
